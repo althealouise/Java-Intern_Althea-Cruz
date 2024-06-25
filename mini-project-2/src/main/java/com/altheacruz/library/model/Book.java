@@ -1,20 +1,18 @@
-package com.altheacruz.library;
+package com.altheacruz.library.model;
 
 public class Book {
-    public int refNo;
-    public String title;
-    public String author;
-    public String ISBN;
-    public int pubYear;
-    public String category;
+    private int refNo;
+    private String title;
+    private String author;
+    private String ISBN;
+    private int pubYear;
 
-    public Book(int refNo, String title, String author, String ISBN, int pubYear, String category) {
+    public Book(int refNo, String title, String author, String ISBN, int pubYear) {
         this.refNo = refNo;
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
         this.pubYear = pubYear;
-        this.category = category;
     }
 
     public int getRefNo() {
@@ -57,11 +55,14 @@ public class Book {
         this.pubYear = pubYear;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
+    @Override
+    public String toString() {
+        return "Book{" +
+                "refNo=" + refNo +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", ISBN='" + ISBN + '\'' +
+                ", pubYear=" + pubYear +
+                '}';
     }
 }
