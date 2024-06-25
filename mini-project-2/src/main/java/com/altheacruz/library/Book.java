@@ -1,4 +1,4 @@
-package com.altheacruz;
+package com.altheacruz.library;
 
 public class Book {
     public int refNo;

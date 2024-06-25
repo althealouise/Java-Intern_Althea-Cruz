@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mini-project-2" />
         <module name="CruzALC_MP1-Basic-Calculator" />
+        <module name="draft" />
       </profile>
     </annotationProcessing>
   </component>
