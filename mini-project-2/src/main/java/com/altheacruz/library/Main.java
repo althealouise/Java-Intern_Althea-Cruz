@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 public class Main {
     private static final Scanner scan = new Scanner(System.in);
-    private static final LibraryServiceImplementation LIBRARY_SERVICE_IMPL_SERVICE = new LibraryServiceImplementation();
+    private static final LibraryServiceImplementation libraryService = new LibraryServiceImplementation();
     private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
@@ -87,11 +87,11 @@ public class Main {
         if (bookType == 'A') {
             System.out.print("Genre: "); // get genre if fiction
                 String genre = scan.nextLine();
-            LIBRARY_SERVICE_IMPL_SERVICE.addFictionBook(refNo, title, author, ISBN, pubYear, genre);
+            libraryService.addFictionBook(refNo, title, author, ISBN, pubYear, genre);
         } else if (bookType == 'B') {
             System.out.print("Subject: "); // get subject if non-fiction
                 String subject = scan.nextLine();
-            LIBRARY_SERVICE_IMPL_SERVICE.addNonFictionBook(refNo, title, author, ISBN, pubYear, subject);
+            libraryService.addNonFictionBook(refNo, title, author, ISBN, pubYear, subject);
         } else {
             logger.warning("Invalid book type.");
             return;
@@ -120,13 +120,13 @@ public class Main {
 
         System.out.print("Search " + searchCriteria + ": ");
         String searchValue = scan.nextLine();
-        LIBRARY_SERVICE_IMPL_SERVICE.searchBooks(searchCriteria, searchValue);
+        libraryService.searchBooks(searchCriteria, searchValue);
     }
 
     // method to show all books in the bookList
     private static void showAllBooks() {
         System.out.println("All books in the library:");
-        LIBRARY_SERVICE_IMPL_SERVICE.showAllBooks();
+        libraryService.showAllBooks();
     }
 
     // method to delete book using the reference number
@@ -134,7 +134,7 @@ public class Main {
         System.out.print("Enter the reference number of the book to delete: ");
             int deleteRefNo = scan.nextInt();
             scan.nextLine();
-        LIBRARY_SERVICE_IMPL_SERVICE.removeBook(deleteRefNo);
+        libraryService.removeBook(deleteRefNo);
         logger.info("Book deleted successfully.");
     }
 
