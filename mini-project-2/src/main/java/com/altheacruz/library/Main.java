@@ -140,7 +140,7 @@ public class Main {
 
     // method to terminate the program with exit status 0 (successful termination)
     private static void exitProgram() {
-        System.out.println("Exiting the program. Goodbye!");
+        System.out.println("Program terminated.");
         System.exit(0);
     }
 }
