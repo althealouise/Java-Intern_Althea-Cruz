@@ -9,23 +9,24 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class Library {
-    private List<Book> bookList;
+    private List<Book> bookList; // store all books in a List
     private static final Logger logger = Logger.getLogger(Library.class.getName());
 
     public Library() {
         this.bookList = new ArrayList<>();
-        initializeBooks(); // Initialize books when LibraryService is instantiated
+        initializeBooks();
     }
 
+    // method to initialize the bookList when Library service is instantiated
     private void initializeBooks() {
-        // Hardcoded initial books
+        // hardcoded initial books (sample only)
         Book book1 = new FictionBook(1, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", "9780590353403", 1997, "Fantasy");
         Book book2 = new FictionBook(2, "To Kill a Mockingbird", "Harper Lee", "9780061120084", 1960, "Classic");
         Book book3 = new NonFictionBook(3, "Sapiens: A Brief History of Humankind", "Yuval Noah Harari", "9780062316097", 2011, "History");
         Book book4 = new NonFictionBook(4, "The Elements of Style", "William Strunk Jr. and E.B. White", "9780205309023", 1918, "Language");
         Book book5 = new FictionBook(5, "The Great Gatsby", "F. Scott Fitzgerald", "9780743273565", 1925, "Classic");
 
-        // Add books to the library
+        // Add book entries to the library
         addBook(book1);
         addBook(book2);
         addBook(book3);
@@ -33,8 +34,10 @@ public class Library {
         addBook(book5);
     }
 
+    // handle the add function using the user inputs
     public void addBook(Book book) {
         if (isDuplicateRefNo(book.getRefNo())) {
+            //
             logger.warning("Book with reference number " + book.getRefNo() + " already exists.");
             System.out.println("Error: Book with reference number " + book.getRefNo() + " already exists.");
         } else {
