@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.altheacruz.library.service.LibraryTest" time="0.087" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/test-classes:/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/classes:/Users/altheacruz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/altheacruz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/altheacruz/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/altheacruz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/altheacruz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/altheacruz/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Manila"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PH"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/20.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire/surefirebooter-20240626160601422_3.jar /Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire 2024-06-26T16-06-00_756-jvmRun1 surefire-20240626160601422_1tmp surefire_0-20240626160601422_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/test-classes:/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/classes:/Users/altheacruz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/altheacruz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/altheacruz/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/altheacruz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/altheacruz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/altheacruz/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/altheacruz"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/20.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire/surefirebooter-20240626160601422_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="20.0.2"/>
+    <property name="user.name" value="altheacruz"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/altheacruz/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/ts/1q0pt4zs4qj8g3_1r68p8_bm0000gn/T/"/>
+    <property name="java.version" value="20.0.2"/>
+    <property name="user.dir" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/altheacruz/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="20.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="testAddBook" classname="com.altheacruz.library.service.LibraryTest" time="0.045">
+    <system-out><![CDATA[Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | History  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 12    | Test Add Book                                              | Althea Cruz                         | 1234567890123 | 2020  | Inspiring |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997}, Genre='Fantasy'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011}, Subject='History'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918}, Subject='Language'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=5, title='The Great Gatsby', author='F. Scott Fitzgerald', ISBN='9780743273565', pubYear=1925}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=12, title='Test Add Book', author='Althea Cruz', ISBN='1234567890123', pubYear=2020}, Genre='Inspiring'}
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchBooksByTitle" classname="com.altheacruz.library.service.LibraryTest" time="0.014">
+    <system-out><![CDATA[Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | History  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 9     | The beginning                                              | Althea Cruz                         | 9988776655443 | 2022  | Adventure |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 10    | The End                                                    | Althea Cruz                         | 2233445566778 | 2023  | Thriller |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Displaying 5 of 5 results:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
+| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
+| 9     | The beginning                                              | Althea Cruz                         | 9988776655443 | 2022  | Adventure |
+| 10    | The End                                                    | Althea Cruz                         | 2233445566778 | 2023  | Thriller |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997}, Genre='Fantasy'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011}, Subject='History'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918}, Subject='Language'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=5, title='The Great Gatsby', author='F. Scott Fitzgerald', ISBN='9780743273565', pubYear=1925}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=9, title='The beginning', author='Althea Cruz', ISBN='9988776655443', pubYear=2022}, Genre='Adventure'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=10, title='The End', author='Althea Cruz', ISBN='2233445566778', pubYear=2023}, Genre='Thriller'}
+]]></system-err>
+  </testcase>
+  <testcase name="testRemoveBook" classname="com.altheacruz.library.service.LibraryTest" time="0.01">
+    <system-out><![CDATA[Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | History  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 55    | Test Remove Book                                           | Althea Cruz                         | 9876543210987 | 2019  | Mathematics |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997}, Genre='Fantasy'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011}, Subject='History'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918}, Subject='Language'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=5, title='The Great Gatsby', author='F. Scott Fitzgerald', ISBN='9780743273565', pubYear=1925}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=55, title='Test Remove Book', author='Althea Cruz', ISBN='9876543210987', pubYear=2019}, Subject='Mathematics'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation removeBook
+INFO: Book removed: Book{refNo=55, title='Test Remove Book', author='Althea Cruz', ISBN='9876543210987', pubYear=2019}, Subject='Mathematics'}
+]]></system-err>
+  </testcase>
+  <testcase name="testAddDuplicateBook" classname="com.altheacruz.library.service.LibraryTest" time="0.007">
+    <system-out><![CDATA[Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | History  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 13    | Test Duplicate Book                                        | Althea Cruz                         | 1234567890123 | 2020  | Fantasy  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997}, Genre='Fantasy'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011}, Subject='History'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918}, Subject='Language'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=5, title='The Great Gatsby', author='F. Scott Fitzgerald', ISBN='9780743273565', pubYear=1925}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=13, title='Test Duplicate Book', author='Althea Cruz', ISBN='1234567890123', pubYear=2020}, Genre='Fantasy'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+WARNING: Book with reference number 13 already exists.
+]]></system-err>
+  </testcase>
+  <testcase name="testShowAllBooks" classname="com.altheacruz.library.service.LibraryTest" time="0.002">
+    <system-out><![CDATA[Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | History  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+Book added successfully:
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+| 8     | Another Book                                               | Althea Cruz                         | 1122334455667 | 2021  | Adventure |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997}, Genre='Fantasy'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011}, Subject='History'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918}, Subject='Language'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=5, title='The Great Gatsby', author='F. Scott Fitzgerald', ISBN='9780743273565', pubYear=1925}, Genre='Classic'}
+Jun 26, 2024 4:06:01 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+INFO: Book added: Book{refNo=8, title='Another Book', author='Althea Cruz', ISBN='1122334455667', pubYear=2021}, Genre='Adventure'}
+]]></system-err>
+  </testcase>
+</testsuite>

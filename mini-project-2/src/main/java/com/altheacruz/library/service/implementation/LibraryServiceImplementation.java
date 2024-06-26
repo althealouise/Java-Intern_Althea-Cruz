@@ -1,18 +1,19 @@
-package com.altheacruz.library.service;
+package com.altheacruz.library.service.implementation;
 
 import com.altheacruz.library.model.Book;
 import com.altheacruz.library.model.FictionBook;
 import com.altheacruz.library.model.NonFictionBook;
+import com.altheacruz.library.service.LibraryService;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class Library {
+public class LibraryServiceImplementation implements LibraryService {
     private List<Book> bookList; // store all books in a List
-    private static final Logger logger = Logger.getLogger(Library.class.getName());
+    private static final Logger logger = Logger.getLogger(LibraryServiceImplementation.class.getName());
 
-    public Library() {
+    public LibraryServiceImplementation() {
         this.bookList = new ArrayList<>();
         initializeBooks();
     }
@@ -36,18 +37,18 @@ public class Library {
 
     // handle the add function using the user inputs
     public void addBook(Book book) {
+        // log warning of duplicate book
         if (isDuplicateRefNo(book.getRefNo())) {
-            //
             logger.warning("Book with reference number " + book.getRefNo() + " already exists.");
-            System.out.println("Error: Book with reference number " + book.getRefNo() + " already exists.");
         } else {
             bookList.add(book);
             logger.info("Book added: " + book);
             System.out.println("Book added successfully:");
-            printBookTable(List.of(book)); // Display the added book
+            printBookTable(List.of(book)); // display the added book
         }
     }
 
+    // check if the book with the reference number input is already existing in the bookList
     private boolean isDuplicateRefNo(int refNo) {
         for (Book book : bookList) {
             if (book.getRefNo() == refNo) {
@@ -57,17 +58,19 @@ public class Library {
         return false;
     }
 
-
+    // handle adding a new fiction book
     public void addFictionBook(int refNo, String title, String author, String ISBN, int pubYear, String genre) {
         Book newBook = new FictionBook(refNo, title, author, ISBN, pubYear, genre);
         addBook(newBook);
     }
 
+    // handle adding a new non-fiction book
     public void addNonFictionBook(int refNo, String title, String author, String ISBN, int pubYear, String subject) {
         Book newBook = new NonFictionBook(refNo, title, author, ISBN, pubYear, subject);
         addBook(newBook);
     }
 
+    // handle removing a book using the reference number
     public void removeBook(int refNo) {
         Book bookToRemove = null;
         for (Book book : bookList) {
@@ -80,10 +83,11 @@ public class Library {
             bookList.remove(bookToRemove);
             logger.info("Book removed: " + bookToRemove);
         } else {
-            logger.warning("Book not found.");
+            logger.warning("Book not found."); // reference number input does not exist
         }
     }
 
+    // show all the books stored in the bookList
     public void showAllBooks() {
         if (bookList.isEmpty()) {
             logger.info("No books available.");
@@ -93,35 +97,39 @@ public class Library {
         }
     }
 
-    public void searchBooks(String criteria, String value) {
+    // search books based on a criteria of choice: author/title
+    public List<Book> searchBooks(String criteria, String value) {
         List<Book> foundBooks = new ArrayList<>();
         value = value.toLowerCase();
         for (Book book : bookList) {
             switch (criteria.toLowerCase()) {
                 case "author":
                     if (book.getAuthor().toLowerCase().contains(value)) {
-                        foundBooks.add(book);
+                        foundBooks.add(book); // display all books with author that contains the value input
                     }
                     break;
                 case "title":
                     if (book.getTitle().toLowerCase().contains(value)) {
-                        foundBooks.add(book);
+                        foundBooks.add(book); // display all books with title that contains the value input
                     }
                     break;
                 default:
                     logger.warning("Invalid search criteria.");
-                    return;
+                    return foundBooks;
             }
         }
 
+        // no results based on the given value and criteria
         if (foundBooks.isEmpty()) {
             logger.info("No books found with the given criteria.");
         } else {
             System.out.println("Displaying " + foundBooks.size() + " of " + foundBooks.size() + " results:");
             printBookTable(foundBooks);
         }
+        return foundBooks;
     }
 
+    // print the bookList in a tabular form
     private void printBookTable(List<Book> books) {
         System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+");
         System.out.println("| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |");
@@ -131,5 +139,10 @@ public class Library {
                     book.getRefNo(), book.getTitle(), book.getAuthor(), book.getISBN(), book.getPubYear(), book instanceof FictionBook ? ((FictionBook) book).getGenre() : ((NonFictionBook) book).getSubject());
         }
         System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+");
+    }
+
+    // getter method for bookList
+    public List<Book> getBooks() {
+        return bookList;
     }
 }
