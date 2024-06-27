@@ -5,7 +5,7 @@ This program is a Library Management System that allows you to manage books in a
 1. **Add a Book**
 - Users can add new books to the library. The system captures details such as reference number, title, author, ISBN, publication year, and whether the book is fiction or non-fiction. For fiction books, the genre is also captured, while for non-fiction books, the subject is recorded.
 2. **Search Books**
-- Users can search for books in the library by author or title. The results to be displayed are all the books with the title/author containing the search keyword entered.
+- Users can search for books in the library by author, title, or category. The results to be displayed are all the books with the title/author containing the search keyword entered.
 3. **Show All Books**
 - The program can display all books currently stored in the library. 
 4. **Delete a Book**
@@ -44,15 +44,15 @@ This program is a Library Management System that allows you to manage books in a
 Action: c
 All books in the library:
 Displaying 5 of 5 results:
-+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
-| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |
-+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
-| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fantasy  |
-| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Classic  |
-| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | History  |
-| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Language |
-| 5     | The Great Gatsby                                           | F. Scott Fitzgerald                 | 9780743273565 | 1925  | Classic  |
-+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
+| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
+| 1     | Harry Potter and the Philosopher's Stone                   | J.K. Rowling                        | 9780590353403 | 1997  | Fiction  | Genre: Fantasy, Age Rating: 13+                     |
+| 2     | To Kill a Mockingbird                                      | Harper Lee                          | 9780061120084 | 1960  | Fiction  | Genre: Classic, Age Rating: 10+                     |
+| 3     | Sapiens: A Brief History of Humankind                      | Yuval Noah Harari                   | 9780062316097 | 2011  | Textbook | Subject: History, Academic Level: High School       |
+| 4     | The Elements of Style                                      | William Strunk Jr. and E.B. White   | 9780205309023 | 1918  | Textbook | Subject: Language, Academic Level: High School      |
+| 5     | Walk This Way                                              | Vogue                               | 9780743273565 | 2014  | Magazine | Issue No: 325, Season Edition: Spring               |
++-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 Jun 27, 2024 11:25:30 AM com.altheacruz.library.Main handleMenuOptions
 INFO: Action completed. Showing menu again.
 

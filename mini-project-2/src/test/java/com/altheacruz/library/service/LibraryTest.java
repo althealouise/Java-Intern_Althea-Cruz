@@ -76,17 +76,17 @@ public class LibraryTest {
 
     @Test
     void testSearchBooksByTitle() {
-        // add 2 books with "the" in the title
+        // add 2 books with "and" in the title
         Book book1 = new TextBook(9, "The History of Coffee and Cafes", "Althea Cruz", "9988776655443", 2020, "Textbook", "Home Economics","College");
         Book book2 = new TextBook(10, "Kinematics and Dynamics", "Althea Louise", "2233445566778", 2023, "Textbook","Physics", "College");
         libraryService.addBook(book1);
         libraryService.addBook(book2);
 
-        // select search by title as the criteria, and "The" as the keyword/value
+        // select search by title as the criteria, and "and" as the keyword/value
         List<Book> searchResults;
         searchResults = libraryService.searchBooks("title", "and");
 
-        // the search results should contain all the books with "The" in the title
+        // the search results should contain all the books with "and" in the title
         assertTrue(searchResults.contains(book1), "Book1 should appear in the search results");
         assertTrue(searchResults.contains(book2), "Book2 should appear in the search results.");
     }
