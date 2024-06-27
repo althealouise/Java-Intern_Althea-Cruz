@@ -80,18 +80,35 @@ public class Main {
             scan.nextLine();
 
         // get the book type
-        System.out.print("Is this a [a] fiction or [b] non-fiction book? ");
+        System.out.println("What type of book is this?");
+        System.out.println("[a] Fiction book");
+        System.out.println("[b] Text book");
+        System.out.println("[c] Magazine");
+        System.out.print("Enter category: ");
             char bookType = Character.toUpperCase(scan.next().charAt(0));
             scan.nextLine();
 
+        String category = "";
+
         if (bookType == 'A') {
-            System.out.print("Genre: "); // get genre if fiction
+            System.out.print("Genre: ");
                 String genre = scan.nextLine();
-            libraryService.addFictionBook(refNo, title, author, ISBN, pubYear, genre);
+            System.out.print("Age Rating: ");
+                String ageRating = scan.nextLine();
+            libraryService.addFictionBook(refNo, title, author, ISBN, pubYear, category, genre, ageRating);
         } else if (bookType == 'B') {
-            System.out.print("Subject: "); // get subject if non-fiction
+            System.out.print("Subject: ");
                 String subject = scan.nextLine();
-            libraryService.addNonFictionBook(refNo, title, author, ISBN, pubYear, subject);
+            System.out.print("Academic level: ");
+                String academicLevel = scan.nextLine();
+            libraryService.addTextBook(refNo, title, author, ISBN, pubYear, category, subject, academicLevel);
+        } else if (bookType == 'C') {
+            System.out.print("Issue No.: ");
+                int issueNo = scan.nextInt();
+                scan.nextLine();
+            System.out.print("Monthly edition: ");
+                String seasonEdition = scan.nextLine();
+            libraryService.addMagazine(refNo, title, author, ISBN, pubYear, category, issueNo, seasonEdition);
         } else {
             logger.warning("Invalid book type.");
             return;
@@ -101,7 +118,7 @@ public class Main {
 
     // method to search books based on keywords
     private static void searchBooks() {
-        System.out.print("Search by [a] Author or [b] Title: ");
+        System.out.print("Search by [a] Author or [b] Title [c] Category: ");
             char searchChoice = Character.toUpperCase(scan.next().charAt(0));
             scan.nextLine();
 
@@ -113,12 +130,15 @@ public class Main {
             case 'B':
                 searchCriteria = "title";
                 break;
+            case 'C':
+                searchCriteria = "category";
+                break;
             default:
                 logger.warning("Invalid search criteria.");
                 return;
         }
 
-        System.out.print("Search " + searchCriteria + ": ");
+        System.out.print("Search the " + searchCriteria + ": ");
         String searchValue = scan.nextLine();
         libraryService.searchBooks(searchCriteria, searchValue);
     }

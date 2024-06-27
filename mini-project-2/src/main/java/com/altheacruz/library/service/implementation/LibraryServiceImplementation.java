@@ -2,7 +2,8 @@ package com.altheacruz.library.service.implementation;
 
 import com.altheacruz.library.model.Book;
 import com.altheacruz.library.model.FictionBook;
-import com.altheacruz.library.model.NonFictionBook;
+import com.altheacruz.library.model.Magazine;
+import com.altheacruz.library.model.TextBook;
 import com.altheacruz.library.service.LibraryService;
 
 import java.util.ArrayList;
@@ -21,11 +22,11 @@ public class LibraryServiceImplementation implements LibraryService {
     // method to initialize the bookList when Library service is instantiated
     private void initializeBooks() {
         // hardcoded initial books (sample only)
-        Book book1 = new FictionBook(1, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", "9780590353403", 1997, "Fantasy");
-        Book book2 = new FictionBook(2, "To Kill a Mockingbird", "Harper Lee", "9780061120084", 1960, "Classic");
-        Book book3 = new NonFictionBook(3, "Sapiens: A Brief History of Humankind", "Yuval Noah Harari", "9780062316097", 2011, "History");
-        Book book4 = new NonFictionBook(4, "The Elements of Style", "William Strunk Jr. and E.B. White", "9780205309023", 1918, "Language");
-        Book book5 = new FictionBook(5, "The Great Gatsby", "F. Scott Fitzgerald", "9780743273565", 1925, "Classic");
+        Book book1 = new FictionBook(1, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", "9780590353403", 1997, "Fiction","Fantasy", "13+");
+        Book book2 = new FictionBook(2, "To Kill a Mockingbird", "Harper Lee", "9780061120084", 1960,"Fiction","Classic", "10+");
+        Book book3 = new TextBook(3, "Sapiens: A Brief History of Humankind", "Yuval Noah Harari", "9780062316097", 2011, "TextBook","History", "High School");
+        Book book4 = new TextBook(4, "The Elements of Style", "William Strunk Jr. and E.B. White", "9780205309023", 1918, "TextBook","Language", "High School");
+        Book book5 = new Magazine(5, "Walk This Way", "Vogue", "9780743273565", 2014, "Magazine", 325, "Spring");
 
         // Add book entries to the library
         addBook(book1);
@@ -59,14 +60,20 @@ public class LibraryServiceImplementation implements LibraryService {
     }
 
     // handle adding a new fiction book
-    public void addFictionBook(int refNo, String title, String author, String ISBN, int pubYear, String genre) {
-        Book newBook = new FictionBook(refNo, title, author, ISBN, pubYear, genre);
+    public void addFictionBook(int refNo, String title, String author, String ISBN, int pubYear, String category, String genre, String ageRating) {
+        Book newBook = new FictionBook(refNo, title, author, ISBN, pubYear, "Fiction book", genre, ageRating);
         addBook(newBook);
     }
 
-    // handle adding a new non-fiction book
-    public void addNonFictionBook(int refNo, String title, String author, String ISBN, int pubYear, String subject) {
-        Book newBook = new NonFictionBook(refNo, title, author, ISBN, pubYear, subject);
+    // handle adding a new textbook
+    public void addTextBook(int refNo, String title, String author, String ISBN, int pubYear, String category, String subject, String academicLevel) {
+        Book newBook = new TextBook(refNo, title, author, ISBN, pubYear, "Text book", subject, academicLevel);
+        addBook(newBook);
+    }
+
+    // handle adding a new magazine
+    public void addMagazine(int refNo, String title, String author, String ISBN, int pubYear, String category, int issueNo, String monthlyEdition) {
+        Book newBook = new Magazine(refNo, title, author, ISBN, pubYear, "Magazine", issueNo, monthlyEdition);
         addBook(newBook);
     }
 
@@ -105,12 +112,17 @@ public class LibraryServiceImplementation implements LibraryService {
             switch (criteria.toLowerCase()) {
                 case "author":
                     if (book.getAuthor().toLowerCase().contains(value)) {
-                        foundBooks.add(book); // display all books with author that contains the value input
+                        foundBooks.add(book); // display all books with author that contains the author value input
                     }
                     break;
                 case "title":
                     if (book.getTitle().toLowerCase().contains(value)) {
-                        foundBooks.add(book); // display all books with title that contains the value input
+                        foundBooks.add(book); // display all books with title that contains the title value input
+                    }
+                    break;
+                case "category":
+                    if (book.getCategory().toLowerCase().contains(value)) {
+                        foundBooks.add(book); // display all books with title that contains the category value input
                     }
                     break;
                 default:
@@ -131,15 +143,30 @@ public class LibraryServiceImplementation implements LibraryService {
 
     // print the bookList in a tabular form
     private void printBookTable(List<Book> books) {
-        System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+");
-        System.out.println("| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category |");
-        System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+");
+        System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+");
+        System.out.println("| RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |");
+        System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+");
+
         for (Book book : books) {
-            System.out.format("| %-5d | %-58s | %-35s | %-13s | %-5d | %-8s |\n",
-                    book.getRefNo(), book.getTitle(), book.getAuthor(), book.getISBN(), book.getPubYear(), book instanceof FictionBook ? ((FictionBook) book).getGenre() : ((NonFictionBook) book).getSubject());
+            String additionalInfo = "";
+            if (book instanceof FictionBook) {
+                FictionBook fictionBook = (FictionBook) book;
+                additionalInfo = "Genre: " + fictionBook.getGenre() + ", Age Rating: " + fictionBook.getAgeRating();
+            } else if (book instanceof TextBook) {
+                TextBook textBook = (TextBook) book;
+                additionalInfo = "Subject: " + textBook.getSubject() + ", Academic Level: " + textBook.getAcademicLevel();
+            } else if (book instanceof Magazine) {
+                Magazine magazine = (Magazine) book;
+                additionalInfo = "Issue No: " + magazine.getIssueNo() + ", Season Edition: " + magazine.getSeasonEdition();
+            }
+
+            System.out.format("| %-5d | %-58s | %-35s | %-13s | %-5d | %-8s | %-51s |\n",
+                    book.getRefNo(), book.getTitle(), book.getAuthor(), book.getISBN(), book.getPubYear(), book.getCategory(), additionalInfo);
         }
-        System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+");
+
+        System.out.println("+-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+");
     }
+
 
     // getter method for bookList
     public List<Book> getBooks() {

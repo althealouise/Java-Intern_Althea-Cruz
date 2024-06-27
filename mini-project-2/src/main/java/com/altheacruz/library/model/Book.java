@@ -6,13 +6,15 @@ public class Book {
     private String author;
     private String ISBN;
     private int pubYear;
+    private String category;
 
-    public Book(int refNo, String title, String author, String ISBN, int pubYear) {
+    public Book(int refNo, String title, String author, String ISBN, int pubYear, String category) {
         this.refNo = refNo;
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
         this.pubYear = pubYear;
+        this.category = category;
     }
 
     public int getRefNo() {
@@ -55,6 +57,14 @@ public class Book {
         this.pubYear = pubYear;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -63,6 +73,7 @@ public class Book {
                 ", author='" + author + '\'' +
                 ", ISBN='" + ISBN + '\'' +
                 ", pubYear=" + pubYear +
+                ", category='" + category + '\'' +
                 '}';
     }
 }
