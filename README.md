@@ -5,12 +5,12 @@
 ### Pre-conditions
 You need to have an IDE installed on your computer. For these projects, it is ideal to use IntelliJ Community Edition. 
 
-### Installing IntelliJ IDEA
+#### Installing IntelliJ IDEA
 1. You may download it through this link [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows).
 2. Make sure to select the installer suitable for your **operating system** (Windows, macOS, or Linux).
 3. Run the installer/executable file and follow the on-screen instructions to complete the installation process.
 
-### Connecting Your GitHub Account to IntelliJ IDEA
+#### Connecting Your GitHub Account to IntelliJ IDEA
 1. Open the **IntelliJ IDEA** application.
 2. Go to File > Settings (or IntelliJ IDEA > Preferences on macOS).
 3. In the Settings/Preferences dialog, select **Version Control > GitHub**.
@@ -19,7 +19,7 @@ You need to have an IDE installed on your computer. For these projects, it is id
    - Log in with GitHub: Click on Log In via GitHub, which will open a browser window. Follow the prompts to authorize IntelliJ IDEA to access your GitHub account. You may be asked to use your mobile phone for an authorization code in the GitHub application.
    - Log in with Token: Generate a personal access token from your GitHub account settings (go to Settings > Developer settings > Personal access tokens on GitHub). Copy the token, return to IntelliJ IDEA, and paste the token into the Token field. Click Add account.
 
-### Cloning this Repository
+#### Cloning this Repository
 1. On the Welcome screen, click on Get from VCS (Version Control System).
 2. In the URL field, enter the following repository URL: `https://github.com/althealouise/Java-Intern_Althea-Cruz.git`.
 3. Choose a directory on your local machine where you want to clone the repository.
@@ -59,6 +59,9 @@ Enter second number: 4
 Answer = 12
 Do you want to try again? (y/n): n
 ```
+
+## [mini-project-2](https://github.com/althealouise/Java-Intern_Althea-Cruz/tree/main/mini-project-2)
+This program is a Library Management System that allows you to add, search, display, and delete books. The user interacts with the system through a menu-driven interface.
 
 ## Author
 Althea Louise Cruz
