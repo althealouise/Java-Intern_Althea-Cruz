@@ -14,9 +14,9 @@ You need to have an IDE installed on your computer. For these projects, it is id
 1. Open the **IntelliJ IDEA** application.
 2. Go to File > Settings (or IntelliJ IDEA > Preferences on macOS).
 3. In the Settings/Preferences dialog, select **Version Control > GitHub**.
-4. Click Add account.
+4. Click "**Add account**:.
 5. You can log in using your GitHub credentials or by using a GitHub token:
-6. - Log in with GitHub: Click on Log In via GitHub, which will open a browser window. Follow the prompts to authorize IntelliJ IDEA to access your GitHub account. You may be asked to use your mobile phone for an authorization code in the GitHub application.
+   - Log in with GitHub: Click on Log In via GitHub, which will open a browser window. Follow the prompts to authorize IntelliJ IDEA to access your GitHub account. You may be asked to use your mobile phone for an authorization code in the GitHub application.
    - Log in with Token: Generate a personal access token from your GitHub account settings (go to Settings > Developer settings > Personal access tokens on GitHub). Copy the token, return to IntelliJ IDEA, and paste the token into the Token field. Click Add account.
 
 ### Cloning this Repository
