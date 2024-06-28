@@ -1,4 +1,6 @@
+com/altheacruz/library/model/Magazine.class
 com/altheacruz/library/Main.class
+com/altheacruz/library/model/TextBook.class
 com/altheacruz/library/service/implementation/LibraryServiceImplementation.class
 com/altheacruz/library/model/Book.class
 com/altheacruz/library/service/LibraryService.class

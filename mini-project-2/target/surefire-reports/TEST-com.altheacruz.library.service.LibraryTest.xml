@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.altheacruz.library.service.LibraryTest" time="0.081" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.altheacruz.library.service.LibraryTest" time="0.08" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PH"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/20.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire/surefirebooter-20240627202159415_3.jar /Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire 2024-06-27T20-21-59_370-jvmRun1 surefire-20240627202159415_1tmp surefire_0-20240627202159415_2tmp"/>
+    <property name="sun.java.command" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire/surefirebooter-20240627220809905_3.jar /Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire 2024-06-27T22-08-09_867-jvmRun1 surefire-20240627220809905_1tmp surefire_0-20240627220809905_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/test-classes:/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/classes:/Users/altheacruz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/altheacruz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/altheacruz/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/altheacruz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/altheacruz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/altheacruz/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire/surefirebooter-20240627202159415_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/altheacruz/Desktop/OJT/STRATPOINT/Java-Intern_Althea-Cruz/mini-project-2/target/surefire/surefirebooter-20240627220809905_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="20.0.2"/>
@@ -59,7 +59,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testAddBook" classname="com.altheacruz.library.service.LibraryTest" time="0.047">
+  <testcase name="testAddBook" classname="com.altheacruz.library.service.LibraryTest" time="0.05">
     <system-out><![CDATA[Book added successfully:
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 | RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |
@@ -97,21 +97,21 @@ Book added successfully:
 | 12    | Test Add Book                                              | Althea Cruz                         | 1234567890123 | 2020  | Fiction  | Genre: Fantasy, Age Rating: 7+                      |
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+    <system-err><![CDATA[Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997, category='Fiction'}, genre='Fantasy', ageRating='13+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960, category='Fiction'}, genre='Classic', ageRating='10+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011, category='Textbook'}, subject='History', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918, category='Textbook'}, subject='Language', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=5, title='Walk This Way', author='Vogue', ISBN='9780743273565', pubYear=2014, category='Magazine'}, issueNo='325', monthlyEdition='Spring'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=12, title='Test Add Book', author='Althea Cruz', ISBN='1234567890123', pubYear=2020, category='Fiction'}, genre='Fantasy', ageRating='7+'}
 ]]></system-err>
   </testcase>
-  <testcase name="testSearchBooksByTitle" classname="com.altheacruz.library.service.LibraryTest" time="0.011">
+  <testcase name="testSearchBooksByTitle" classname="com.altheacruz.library.service.LibraryTest" time="0.01">
     <system-out><![CDATA[Book added successfully:
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 | RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |
@@ -163,23 +163,23 @@ Displaying 3 of 3 results:
 | 10    | Kinematics and Dynamics                                    | Althea Louise                       | 2233445566778 | 2023  | Textbook | Subject: Physics, Academic Level: College           |
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+    <system-err><![CDATA[Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997, category='Fiction'}, genre='Fantasy', ageRating='13+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960, category='Fiction'}, genre='Classic', ageRating='10+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011, category='Textbook'}, subject='History', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918, category='Textbook'}, subject='Language', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=5, title='Walk This Way', author='Vogue', ISBN='9780743273565', pubYear=2014, category='Magazine'}, issueNo='325', monthlyEdition='Spring'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=9, title='The History of Coffee and Cafes', author='Althea Cruz', ISBN='9988776655443', pubYear=2020, category='Textbook'}, subject='Home Economics', academicLevel='College'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=10, title='Kinematics and Dynamics', author='Althea Louise', ISBN='2233445566778', pubYear=2023, category='Textbook'}, subject='Physics', academicLevel='College'}
 ]]></system-err>
   </testcase>
-  <testcase name="testRemoveBook" classname="com.altheacruz.library.service.LibraryTest" time="0.007">
+  <testcase name="testRemoveBook" classname="com.altheacruz.library.service.LibraryTest" time="0.005">
     <system-out><![CDATA[Book added successfully:
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 | RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |
@@ -217,23 +217,23 @@ Book added successfully:
 | 55    | Test Remove Book                                           | Althea Cruz                         | 9876543210987 | 2019  | Magazine | Issue No: 13, Season Edition: Winter                |
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+    <system-err><![CDATA[Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997, category='Fiction'}, genre='Fantasy', ageRating='13+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960, category='Fiction'}, genre='Classic', ageRating='10+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011, category='Textbook'}, subject='History', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918, category='Textbook'}, subject='Language', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=5, title='Walk This Way', author='Vogue', ISBN='9780743273565', pubYear=2014, category='Magazine'}, issueNo='325', monthlyEdition='Spring'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=55, title='Test Remove Book', author='Althea Cruz', ISBN='9876543210987', pubYear=2019, category='Magazine'}, issueNo='13', monthlyEdition='Winter'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation removeBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation removeBook
 INFO: Book removed: Book{refNo=55, title='Test Remove Book', author='Althea Cruz', ISBN='9876543210987', pubYear=2019, category='Magazine'}, issueNo='13', monthlyEdition='Winter'}
 ]]></system-err>
   </testcase>
-  <testcase name="testAddDuplicateBook" classname="com.altheacruz.library.service.LibraryTest" time="0.003">
+  <testcase name="testAddDuplicateBook" classname="com.altheacruz.library.service.LibraryTest" time="0.004">
     <system-out><![CDATA[Book added successfully:
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 | RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |
@@ -271,23 +271,23 @@ Book added successfully:
 | 13    | Test Duplicate Book                                        | Althea Cruz                         | 1234567890123 | 2020  | Textbook | Subject: Science, Academic Level: Elementary        |
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+    <system-err><![CDATA[Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997, category='Fiction'}, genre='Fantasy', ageRating='13+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960, category='Fiction'}, genre='Classic', ageRating='10+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011, category='Textbook'}, subject='History', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918, category='Textbook'}, subject='Language', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=5, title='Walk This Way', author='Vogue', ISBN='9780743273565', pubYear=2014, category='Magazine'}, issueNo='325', monthlyEdition='Spring'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=13, title='Test Duplicate Book', author='Althea Cruz', ISBN='1234567890123', pubYear=2020, category='Textbook'}, subject='Science', academicLevel='Elementary'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 WARNING: Book with reference number 13 already exists.
 ]]></system-err>
   </testcase>
-  <testcase name="testShowAllBooks" classname="com.altheacruz.library.service.LibraryTest" time="0.001">
+  <testcase name="testShowAllBooks" classname="com.altheacruz.library.service.LibraryTest" time="0.003">
     <system-out><![CDATA[Book added successfully:
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 | RefNo | Title                                                      | Author                              | ISBN          | Year  | Category | Additional information                              |
@@ -325,17 +325,17 @@ Book added successfully:
 | 8     | Another Book                                               | Althea Cruz                         | 1122334455667 | 2021  | Fiction  | Genre: Horror, Age Rating: 18+                      |
 +-------+------------------------------------------------------------+-------------------------------------+---------------+-------+----------+-----------------------------------------------------+
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+    <system-err><![CDATA[Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=1, title='Harry Potter and the Philosopher's Stone', author='J.K. Rowling', ISBN='9780590353403', pubYear=1997, category='Fiction'}, genre='Fantasy', ageRating='13+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=2, title='To Kill a Mockingbird', author='Harper Lee', ISBN='9780061120084', pubYear=1960, category='Fiction'}, genre='Classic', ageRating='10+'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=3, title='Sapiens: A Brief History of Humankind', author='Yuval Noah Harari', ISBN='9780062316097', pubYear=2011, category='Textbook'}, subject='History', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=4, title='The Elements of Style', author='William Strunk Jr. and E.B. White', ISBN='9780205309023', pubYear=1918, category='Textbook'}, subject='Language', academicLevel='High School'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=5, title='Walk This Way', author='Vogue', ISBN='9780743273565', pubYear=2014, category='Magazine'}, issueNo='325', monthlyEdition='Spring'}
-Jun 27, 2024 8:21:59 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
+Jun 27, 2024 10:08:10 PM com.altheacruz.library.service.implementation.LibraryServiceImplementation addBook
 INFO: Book added: Book{refNo=8, title='Another Book', author='Althea Cruz', ISBN='1122334455667', pubYear=2021, category='Fiction'}, genre='Horror', ageRating='18+'}
 ]]></system-err>
   </testcase>
