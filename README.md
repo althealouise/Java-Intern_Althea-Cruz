@@ -124,13 +124,13 @@ INFO: Action completed. Showing menu again.
 This program simulates an e-commerce system where users can browse, search, add products to a cart, and view their cart with a total price calculation.
 
 ### Features
-1. Show all products
+1. **Show all products**
 - Displays all available products in the system with their details.
-2. Search products
+2. **Search products**
 - Allows users to search for products based on name or brand criteria.
-3. Add products to cart
+3. **Add products to cart**
 - Enables users to add products to their shopping cart by entering the product ID.
-4. View cart
+4. **View cart**
 - Shows the contents of the user's cart including product IDs, names, and prices. It also calculates and displays the total price of all items in the cart.
 
 ### Executing program
@@ -146,20 +146,14 @@ This program simulates an e-commerce system where users can browse, search, add 
  4. Lastly, you can run the application by running the command `mvn exec:java`
 
 ### Program Flow
-1. **Choose an Action**. The program will display a menu with the options.
-2. After selecting an action, you will be prompted with input fields depending on your selection.
-3. Your action will be logged in the console and it will also tell you whether it is successful or not.
-4. After the action has been completed, the menu will be prompted again.
-5. To exit, choose the "Exit" option from the menu.
-### Program Flow
-1. Menu
+1. **Menu**
 - Upon running the program, a menu with options will be displayed.
 - Users can choose from options to show all products, search products, add products to cart, view cart contents, or exit the program.
-2. Adding to cart
+2. **Adding to cart**
 - When adding products to the cart, users enter the product ID.
 - Products are validated, and if found, they are added to the cart.
 - Entering '0' completes the transaction and proceeds to view the cart.
-3. Viewing cart
+3. **Viewing cart**
 - The cart displays all added products with details such as ID, name, and price.
 - It calculates the total price of all items in the cart.
 
@@ -207,5 +201,5 @@ Your Cart:
 
 ```
 
-## Author
+## **Author**
 Althea Louise Cruz
