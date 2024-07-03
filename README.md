@@ -133,6 +133,24 @@ This program simulates an e-commerce system where users can browse, search, add 
 4. View cart
 - Shows the contents of the user's cart including product IDs, names, and prices. It also calculates and displays the total price of all items in the cart.
 
+### Executing program
+1. In your **IntelliJ** environment, navigate to this directory `mini-project-2\src\main\java\com.altheacruz.library`
+2. There are **two ways** to run the program.
+ #### Option 1
+ 1. Open the `Main.java` file.
+ 2. On the top part of the window below the navigation bar, click on the **green arrow** next to the main method or **right-click on the file** and select "Run 'Main.main'".
+ #### Option 2
+ 1. Open the Terminal. This is the third button from the bottom of the left panel.
+ 2. Navigate to the directory where the `pom.xml` file is located. By default, the terminal is in the root directory which is `Java-Intern_Althea-Cruz`. Hence, you need to enter `cd mini-project-2`
+ 3. Build the project by entering this command in the terminal `mvn clean install`
+ 4. Lastly, you can run the application by running the command `mvn exec:java`
+
+### Program Flow
+1. **Choose an Action**. The program will display a menu with the options.
+2. After selecting an action, you will be prompted with input fields depending on your selection.
+3. Your action will be logged in the console and it will also tell you whether it is successful or not.
+4. After the action has been completed, the menu will be prompted again.
+5. To exit, choose the "Exit" option from the menu.
 ### Program Flow
 1. Menu
 - Upon running the program, a menu with options will be displayed.
